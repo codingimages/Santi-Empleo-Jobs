@@ -3,11 +3,11 @@ window.onload = () => {
 
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker
-      .register("/OneSignalSDKWorker.js")
-      .then(function(registration) {
+      .register("/serviceWorkers.js")
+      .then(function (registration) {
         console.log("Service Worker Registered", registration);
       })
-      .catch(function(err) {
+      .catch(function (err) {
         console.log("Service worker failed to register", err);
       });
   }
